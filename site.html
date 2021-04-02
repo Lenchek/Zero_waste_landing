@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>Zero Waste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class='logo'>
+                <img src="images/logo.svg">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+<!--                    //<li><a href="#">Refuse</a></li>-->
+                    //<li><a href="#">Volunteering</a></li>
+                    //<li><a href="#">Recycle map</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="information">
+            <img src="images/leaf.png" class="zeroWaste">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="images/REFUSE.svg">
+                    <div>
+<!--                        <h1>1. REFUSE</h1>-->
+                        <p>no shopping - no packaging</p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="images/REDUCE.svg">
+                    <div>
+<!--                        <h1>2. REDUCE</h1>-->
+                        <p>buy what you really need</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="images/REUSE.svg">
+                    <div>
+<!--                        <h1>3. REUSE</h1>-->
+                        <p>old clothes, electronics, furniture</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="images/RECYCLE.svg">
+                    <div>
+<!--                        <h1>4. RECYCLE</h1>-->
+                        <p>secondary raw materials</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <img src="images/arrow.png" id="upBtn">
+            <h3>Steps</h3>
+            <img src="images/arrow.png" id="downBtn">
+        </div>
+
+    </div>
+
+    <script>
+        var circle = document.getElementById('circle');
+        var upBtn = document.getElementById('upBtn');
+        var downBtn = document.getElementById('downBtn');
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        upBtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+        downBtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
+
+</body>
+</html>
